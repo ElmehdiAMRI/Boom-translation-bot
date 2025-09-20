@@ -11,7 +11,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Python 3.10+ and required tools
 echo "🐍 Installing Python and tools..."
-sudo apt install -y python3.10 python3.10-venv python3-pip git screen htop
+sudo apt-get install -y python3-full python3-venv git screen htop
 
 # Create bot directory
 echo "📁 Creating bot directory..."
@@ -20,7 +20,7 @@ cd ~/discord-bot
 
 # Create virtual environment
 echo "🔧 Setting up Python virtual environment..."
-python3.10 -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 
 # Clone or create bot files
