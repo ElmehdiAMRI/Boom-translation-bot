@@ -1,4 +1,14 @@
-discord.py
-flask
-requests
-python-dotenv
+# Core Discord bot
+discord.py==2.3.2
+
+# Async HTTP for translations
+aiohttp==3.9.1
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Web server (optional - only if needed)
+flask==3.0.0
+
+# For Oracle Cloud - remove 'requests' as we use aiohttp
+# requests  # NOT NEEDED - using aiohttp instead
